@@ -1,0 +1,17 @@
+.container {
+   
+        .firstRow {
+    display: flex;
+    align-items: center;
+  }
+  .secondRow {
+    display: flex;
+    position: relative;
+    top: -30px;
+    align-items: center;
+    p{
+        margin-left: 15px;
+        width: 400px;
+    }
+  }
+}

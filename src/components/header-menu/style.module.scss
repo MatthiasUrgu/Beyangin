@@ -1,0 +1,45 @@
+$primmaryColor :rgb(253 91 50);
+
+.container{
+    display: flex;
+    
+  
+
+    a{
+        text-decoration: none;
+        margin-left: 30px;  
+        li{
+            position:relative;
+            list-style: none;
+            font-weight: 700;
+            color:black;
+            
+        }
+    }
+}
+
+.container li:hover{
+    
+    color:$primmaryColor;
+    transition: 0.2s;
+
+    
+
+}
+
+li:hover:after{
+    content: '';
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    margin-top: 8px;
+    transform: translateX(-50%);
+    border-radius: 30px;
+    background-color: $primmaryColor;
+
+    transition: 1s;
+    
+}
