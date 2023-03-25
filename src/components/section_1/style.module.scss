@@ -1,17 +1,55 @@
+@import url(../../fonts/font.scss);
+
 .container {
-   
-        .firstRow {
+    margin-top: 30px;
+  h1 {
+    font-size: 45px;
+    font-family: Panton;
+    letter-spacing: 1px;
+  }
+
+  
+  .firstRow {
     display: flex;
     align-items: center;
+
+        .vignette{
+                margin-left: 20px;
+                content:'';
+                border-radius: 25px;
+                 height: 50px; 
+                width: 130px;
+                background-color: black;
+                overflow: hidden;
+               
+
+            
+            
+            img{
+                position: relative;
+                transform: translate(-45%,-25%);
+                margin-left:15px;
+                width: 400px;
+              
+                
+
+            }
+        }
+
+
   }
   .secondRow {
     display: flex;
     position: relative;
     top: -30px;
     align-items: center;
-    p{
+
+    .little {
+        width: 350px;
+      p {
+        font-size: 13px;
         margin-left: 15px;
-        width: 400px;
+      }
     }
   }
 }

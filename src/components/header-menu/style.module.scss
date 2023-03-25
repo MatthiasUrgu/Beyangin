@@ -35,11 +35,11 @@ li:hover:after{
     left: 50%;
     width: 10px;
     height: 10px;
-    margin-top: 8px;
+    margin-top: 10px;
     transform: translateX(-50%);
     border-radius: 30px;
     background-color: $primmaryColor;
 
-    transition: 1s;
+    transition: 0.2s;
     
 }
