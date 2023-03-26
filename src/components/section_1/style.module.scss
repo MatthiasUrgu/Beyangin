@@ -2,7 +2,8 @@
 
 .container {
     margin-top: 30px;
-    margin-bottom:-30px;
+    margin-bottom: 30px;
+    
   h1 {
     font-size: 45px;
     font-family: PantonBold;
@@ -10,7 +11,6 @@
     flex-wrap: nowrap;
   }
 
-  
   .firstRow {
     display: flex;
     align-items: center;
@@ -23,30 +23,18 @@
                 background-color: black;
                 border-radius: 25px;
                 overflow: hidden; 
-               
 
-            
-            
             img{
                 position: relative;
-                
                 transform:scaleX(-1) translate(20%,-23%);
-                
-                
                 margin-left:15px;
                 width: 150px;
-              
-                
-
             }
         }
-
 
   }
   .secondRow {
     display: flex;
-    position: relative;
-    top: -30px;
     align-items: center;
 
     .little {

@@ -7,12 +7,13 @@
   .vertical {
     overflow: hidden;
     border-radius: 20px;
+    width: 25%;
 
     img {
       transform: translate(-40%, 0%);
     }
 
-    width: 25%;
+    
   }
   .centerCol {
     width: 48%;

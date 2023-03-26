@@ -3,11 +3,13 @@ import Header from "./components/header/header";
 import Section1 from "./components/section_1/section1";
 import vignette from "../src/assets/img/vignette.jpg";
 import SectionImages from "./components/SectionImages/SectionImages";
-import SectionImages_1 from '../src/assets/img/arc-ciel.avif'
-import SectionImages_2 from '../src/assets/img/Old-man-character-design.webp'
+import SectionImages_1 from '../src/assets/img/arc-ciel.png'
+import SectionImages_2 from '../src/assets/img/Old-man-character-design.png'
 import SectionImages_3 from '../src/assets/img/fox.jpg'
 import SectionImages_4 from '../src/assets/img/portrait-homme-afro-americain-feu.jpg'
-import SectionImages_5 from '../src/assets/img/saluez-bataille.avif'
+import SectionImages_5 from '../src/assets/img/saluez-bataille.png'
+import Banniere from "./components/Banniere/Banniere";
+import Section2 from "./components/Section2/Section2";
 function App() {
   return (
     <div>
@@ -25,8 +27,9 @@ function App() {
           verticalSecond={SectionImages_5}subtitle='Art created by AI'
           />
       </div>
+      <Banniere/>
 
-      
+    <Section2 title='Creative Ai Image Made for you' subtitle='With Beyangin you can create customuzed images 10x faster,wherever you worl online'/>
     </div>
   );
 }
