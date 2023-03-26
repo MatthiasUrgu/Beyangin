@@ -1,11 +1,13 @@
-@import url(../../fonts/font.scss);
+@import url(../../assets/fonts/font.scss);
 
 .container {
     margin-top: 30px;
+    margin-bottom:-30px;
   h1 {
     font-size: 45px;
-    font-family: Panton;
+    font-family: PantonBold;
     letter-spacing: 1px;
+    flex-wrap: nowrap;
   }
 
   
@@ -14,22 +16,25 @@
     align-items: center;
 
         .vignette{
-                margin-left: 20px;
                 content:'';
-                border-radius: 25px;
-                 height: 50px; 
+                margin-left: 20px;
+                height: 40px; 
                 width: 130px;
                 background-color: black;
-                overflow: hidden;
+                border-radius: 25px;
+                overflow: hidden; 
                
 
             
             
             img{
                 position: relative;
-                transform: translate(-45%,-25%);
+                
+                transform:scaleX(-1) translate(20%,-23%);
+                
+                
                 margin-left:15px;
-                width: 400px;
+                width: 150px;
               
                 
 
@@ -47,8 +52,10 @@
     .little {
         width: 350px;
       p {
-        font-size: 13px;
+        font-family: PantonLight;
+        font-size: 12px;
         margin-left: 15px;
+        line-height: 18px;
       }
     }
   }
