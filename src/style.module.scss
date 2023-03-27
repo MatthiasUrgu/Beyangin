@@ -5,4 +5,22 @@
     .section1{
         display: flex;
     }
+    .section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.margin{
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.CardItems{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

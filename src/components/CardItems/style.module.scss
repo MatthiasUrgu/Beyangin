@@ -1,0 +1,61 @@
+
+$primmary:rgba(253,91,50);
+.container{
+    width: 260px;
+    
+    .containerImage{
+        
+        border-radius:10px;
+        overflow: hidden;
+        z-index: -1;
+    
+        .firstRow{
+            display: flex;
+        }
+        .secondRow{
+            display: flex;
+            margin-top: -5px;
+        }
+    
+        .img{
+            width: 130px;
+            height: 90px;
+        }
+    }
+
+    
+        .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 80px;
+            border: none;
+            background-color: $primmary;
+            color:white;
+            position: relative;
+            left: 43%;
+            top:-115px;
+            height: 35px;
+            width: 35px;
+            font-size: 15px;
+                span{
+                    position: relative;
+                    top: 3px;
+                    left: 2px;
+                }
+            
+        }
+        
+    
+    h1{
+        margin-top: -20px;
+        font-family: PantonBold;
+        font-size: 12px;
+    }
+    p{
+        font-family: PantonLight;
+        font-size: 10px;
+        margin-bottom: 15px;
+    }
+    
+}

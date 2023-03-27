@@ -1,7 +1,7 @@
 import s from "./style.module.scss";
 import Logo from "../logo/logo";
 import HeaderMenu from "../header-menu/header-menu";
-import SignHeader from "../SignHeader/SignHeader";
+import ButtonGenearator from "../ButtonGenearator/ButtonGenearator";
 function Header() {
   return (
     <div className={s.container}>
@@ -12,7 +12,7 @@ function Header() {
         list3="Library" 
         list4="Contact" />
 
-      <SignHeader signIn='Sign Up' logIn='Log In'/>
+      <ButtonGenearator signIn='Sign Up' logIn='Log In'/>
     </div>
   );
 }

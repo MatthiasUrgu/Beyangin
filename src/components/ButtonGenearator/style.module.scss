@@ -1,0 +1,17 @@
+$primmaryColor :rgb(253 91 50);
+
+
+.button {
+    background-color:$primmaryColor;
+    border: none;
+    padding: 8px  18px;
+    border-radius: 25px;
+    color: white;
+    margin-right: 20px;
+}
+.button:hover{
+    border: 1px solid $primmaryColor;
+    background-color:white;
+    color: $primmaryColor;
+    transition: 0.2s;
+}

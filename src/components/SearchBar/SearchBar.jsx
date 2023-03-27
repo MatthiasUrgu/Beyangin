@@ -10,6 +10,7 @@ function SearchBar() {
           placeholder="vector,super cute and adorable earth woman"/>
       </div>
       <SearchButton />
+      
     </div>
   );
 }

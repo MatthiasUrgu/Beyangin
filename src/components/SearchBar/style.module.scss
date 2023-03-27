@@ -11,9 +11,17 @@
         border: none;
         padding: 8px;
         width: 300px;
+        outline: none;
+        
     }
-    button{
-        border-radius: 50px;
+    input::placeholder{
+        padding-left:8px;
+        color:rgb(203, 203, 203);
     }
+    input:focus::placeholder{
+        font-size: 12px;
+        transition: 0.4s ease-out;
+    }
+    
     
 }
