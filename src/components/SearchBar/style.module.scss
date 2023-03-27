@@ -1,0 +1,19 @@
+.container{
+    display: flex;
+    position: relative;
+    align-items: center;
+    top:-290px;
+    left: 30%;
+    z-index: 99;
+
+    input{
+        border-radius: 20px;
+        border: none;
+        padding: 8px;
+        width: 300px;
+    }
+    button{
+        border-radius: 50px;
+    }
+    
+}

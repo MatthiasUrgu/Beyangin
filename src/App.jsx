@@ -1,4 +1,4 @@
-import s from "./style.module.css";
+import s from "./style.module.scss";
 import Header from "./components/header/header";
 import Section1 from "./components/section_1/section1";
 import vignette from "../src/assets/img/vignette.jpg";
@@ -29,7 +29,10 @@ function App() {
       </div>
       <Banniere/>
 
-    <Section2 title='Creative Ai Image Made for you' subtitle='With Beyangin you can create customuzed images 10x faster,wherever you worl online'/>
+    <Section2 title='Generative AI Image Made for You'      
+              subtitle='With Beyangin you can create customuzed images 10x faster,wherever you worl online'/>
+
+            
     </div>
   );
 }

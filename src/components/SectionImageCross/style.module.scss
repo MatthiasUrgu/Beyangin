@@ -1,0 +1,18 @@
+.containerImage{
+    margin-top: 4%;
+    border-radius:30px;
+    overflow: hidden;
+    z-index: -1;
+
+    .firstRow{
+        display: flex;
+    }
+    .secondRow{
+        display: flex;
+        margin-top: -5px;
+    }
+
+    .img{
+        width: 400px;
+    }
+}
