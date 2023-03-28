@@ -20,6 +20,7 @@ import TwoImage from "./components/TwoImage/TwoImage";
 import item from "./assets/img/fantastique-epic.avif";
 import items from "./assets/img/alien-dans-illustration-foret.jpg";
 import CardItems from "./components/CardItems/CardItems";
+import ButtonCliked from "./components/ButtoCliked/ButtonCliked";
 function App() {
   return (
     <div>
@@ -78,9 +79,10 @@ function App() {
         <TwoImage item={item} items={items} />
 
         <SectionTitle
-            title="Explore the Best Generative Images"
-            subtitle="We take pride in the work created on our platform,which is why we showcase the top daily generatice images for you to discover and we inspired by."
+            title="Bring Your Ideas with Your Prompts"
+            subtitle="Discover how to create visually unique, high-fidelity, and precise prompts to your ideas using Bayangin's extensive library of resources."
           />
+        <ButtonGenearator />
 
         <div className={s.CardItems}>
           <CardItems
@@ -112,8 +114,12 @@ function App() {
           />
           
         </div>
-        <div>lorem78
-          </div>
+        <SectionTitle
+            title="Purchase Subscription"
+            subtitle="Choose the path plan that works for you."
+          />
+
+      <ButtonCliked />
       </div>
     </div>
   );

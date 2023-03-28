@@ -1,0 +1,32 @@
+$primmary:rgb(253, 91, 50);
+
+.container{
+    display: flex;
+    justify-content: center;
+    div {
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid $primmary;
+    
+
+        margin-bottom: 50px;
+        
+        
+
+
+    li{
+        list-style: none;
+        margin: 10px;
+
+        .mange{
+            border: 1px solid $primmary;
+            color: $primmary;
+        }
+        .bois{
+            border:none;
+            color: $primmary;
+        }
+    }
+}
+}

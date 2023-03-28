@@ -1,6 +1,6 @@
 import s from './style.module.scss'
 function HeaderMenu({list1,list2,list3,list4}){
-    return <div className={s.container}>
+    return <div className={s.Nav}>
         <a href="home">
             <li> {list1}</li>
         </a>

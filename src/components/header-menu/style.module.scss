@@ -1,10 +1,7 @@
 $primmaryColor :rgb(253 91 50);
 
-.container{
+.Nav{
     display: flex;
-    
-  
-
     a{
         text-decoration: none;
         margin-left: 30px;  
@@ -13,12 +10,11 @@ $primmaryColor :rgb(253 91 50);
             list-style: none;
             font-weight: 700;
             color:black;
-            
         }
     }
 }
 
-.container li:hover{
+.Nav li:hover{
     
     color:$primmaryColor;
     transition: 0.2s;
