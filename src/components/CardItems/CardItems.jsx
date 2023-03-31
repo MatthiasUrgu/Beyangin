@@ -33,10 +33,4 @@ import ButtonGenearator from '../ButtonGenearator/ButtonGenearator'
     }
     
 
-
-
-
-
-
-
 export default CardItems

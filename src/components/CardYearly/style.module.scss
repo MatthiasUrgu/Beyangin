@@ -1,0 +1,43 @@
+.cardContainer{
+    display: flex;
+    justify-content: space-between;
+
+.cardOrange{
+    width: 290px;
+    border: 1px solid black;
+    height: 450px;
+    background: grey;
+
+    .content{
+        margin: 25px;
+        height: 100%;
+        border: 1px solid blue;
+
+        &:hover{
+            animation: Card 1s;
+            @keyframes Card {
+                0% {
+                    transform: translateY(0);
+                }
+                100% {
+                    
+                    transform: translateY(50px);}
+                
+            }
+        }
+    }
+    .cardButton{
+        overflow: hidden;
+    }
+}
+
+
+
+
+.carButton{
+    justify-content: center;
+    height:50px;
+    width: 300px;
+    background-color: red;
+}
+}

@@ -1,32 +1,44 @@
 $primmary:rgb(253, 91, 50);
 
-.container{
+.toggleContainer{
     display: flex;
     justify-content: center;
-    div {
-        border-radius: 20px;
+    .buttonContainer {
+        
         display: flex;
         justify-content: space-between;
+        border-radius: 20px;
+        width: 150px;
         border: 1px solid $primmary;
-    
+        background-color: white;
+        margin-bottom: 25px;
+        overflow: hidden;
 
-        margin-bottom: 50px;
-        
-        
-
-
-    li{
-        list-style: none;
+       span{
         margin: 10px;
+        
+       }
+       .middle {
+        overflow: hidden;
+        background: orange;
+      }
+       .first{
+        color: $primmary;
+       
+       }
+      
+       .second{
+        color: $primmary;
+        background: white;
+       }
 
-        .mange{
-            border: 1px solid $primmary;
-            color: $primmary;
-        }
-        .bois{
-            border:none;
-            color: $primmary;
-        }
+    .active{
+        
+        color: blue;
     }
 }
+
+
 }
+
+

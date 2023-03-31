@@ -1,15 +1,36 @@
 import s from "./style.module.scss";
-
+import CardWeekly from "../CardWeekly/CardWeekly";
+import CardYearly from "../CardYearly/CardYearly";
+import { useState } from "react";
 function ButtonCliked() {
-  return (
-    <div className={s.container}>
-      <div>
-        
-        <li className={s.bois} >Yearly</li>
-        <li className={s.mange} >Monthly</li>
-      </div>
+ const [isHovered, setIsHovered] = useState(false);
+ 
+ const toggle = () => {
+   setIsHovered(!isHovered);
+ };
+ console.log(isHovered);
+ return (
+  <div>
+    <div className={s.toggleContainer}>
+      <button className={s.buttonContainer} onClick={toggle}>
+        <span
+          className={`${s.first} ${isHovered ? "" : s.active}`}
+          //isHovered est false
+        >
+          Yearly
+        </span>
+        <div className={s.middle}></div>
+        <span
+          className={`${s.second} ${isHovered ? s.active : ""}`}
+          //isHovered est true
+        >
+          Monthly
+        </span>
+      </button>
     </div>
-  );
+    {isHovered? <CardWeekly/>:<CardYearly/>}
+  </div>
+);
 }
 
 export default ButtonCliked;

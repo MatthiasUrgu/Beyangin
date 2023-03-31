@@ -21,6 +21,9 @@ import item from "./assets/img/fantastique-epic.avif";
 import items from "./assets/img/alien-dans-illustration-foret.jpg";
 import CardItems from "./components/CardItems/CardItems";
 import ButtonCliked from "./components/ButtoCliked/ButtonCliked";
+
+
+
 function App() {
   return (
     <div>
@@ -120,6 +123,7 @@ function App() {
           />
 
       <ButtonCliked />
+      
       </div>
     </div>
   );
