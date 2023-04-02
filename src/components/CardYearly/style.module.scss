@@ -1,43 +1,117 @@
+$primmary:rgb(253, 91, 50);
+$second : rgba(151,152,156,1);
+
+
 .cardContainer{
     display: flex;
     justify-content: space-between;
-
+    background-color: $primmary;
+    border-radius: 15px;
+    
 .cardOrange{
-    width: 290px;
-    border: 1px solid black;
-    height: 450px;
-    background: grey;
+    
+    
+    border: 1px solid rgba(151,152,156,0.3);
 
-    .content{
-        margin: 25px;
-        height: 100%;
-        border: 1px solid blue;
+    border-radius: 10px;
+    background: white;
 
-        &:hover{
-            animation: Card 1s;
-            @keyframes Card {
-                0% {
-                    transform: translateY(0);
-                }
-                100% {
-                    
-                    transform: translateY(50px);}
-                
+    &:active{
+        animation-fill-mode: forwards;
+        animation: Card 0.2s;
+        @keyframes Card {
+            from {
+                    transform: scaleX(1);
+                    transform: translateY(0px);
             }
-        }
-    }
-    .cardButton{
-        overflow: hidden;
+            to{
+                    transform: scaleX(0.7);
+                    transform: translateY(20px);
+            }
     }
 }
 
+    .content{
+        display: flex;
+        flex-direction: column;
+        margin:  15px 20px 0px ;
+        overflow: hidden;
+        z-index: -1;
+    
+        h2{
+            font-family: PantonBold;
+            font-size: 25px;
+            margin-bottom: 30px;
+        }
+    
+        .priceContent{
+            display: flex;
+            align-items: center;
 
+        }
+        .price{
+            font-family: PantonBold;
+            font-weight: 700;
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        .priceTime{
+            padding-top: 10px;
+            padding-left: 10px;
+            font-family: PantonBold;
+            color: $second;
+        }
+        .subtitle{
+            font-family: PantonBold;
+            font-size: 12px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            color: $second;
+        }
+        .line{
+            border-radius: 30px;
+            background: $second;
+            opacity: 0.3;
+            height: 1px;
+            width: 100%;
+            margin-top: 15px;
+            margin-bottom: 50px;
+        }
+        .list{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 75px;
 
+            .puce{
+                padding-top: -5px;
+                margin-left: 15px;
+            }
+        }
+}
 
-.carButton{
-    justify-content: center;
-    height:50px;
-    width: 300px;
-    background-color: red;
+.buttonContainer{
+
+    display: flex;
+   
+    
+ button{
+        
+        align-self: center;
+        border: none;
+        height:30px;
+        width: 100%;
+        margin: 0px 10px;
+        border-radius: 15px;
+        background-color: rgb(253, 91, 50);
+        color: white;
+        margin-bottom: 30px;
+        z-index: 1;
+    }
+    button:hover{
+        color:rgb(253, 91, 50);
+        background: white;
+    }
+}
+
 }
 }

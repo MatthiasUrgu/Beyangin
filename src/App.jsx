@@ -21,7 +21,7 @@ import item from "./assets/img/fantastique-epic.avif";
 import items from "./assets/img/alien-dans-illustration-foret.jpg";
 import CardItems from "./components/CardItems/CardItems";
 import ButtonCliked from "./components/ButtoCliked/ButtonCliked";
-
+import Accordeon from "./components/Accordeon/Accordeon";
 
 
 function App() {
@@ -124,7 +124,16 @@ function App() {
 
       <ButtonCliked />
       
+      <SectionTitle
+            title="FAQ"
+            subtitle="Frequently Asked Questions about Bayangin."
+          />
+      <Accordeon title='fefefe'/>
+      <section>
+      
+      </section>
       </div>
+      
     </div>
   );
 }
