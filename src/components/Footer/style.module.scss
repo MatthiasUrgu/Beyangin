@@ -1,0 +1,41 @@
+
+
+
+.footer{
+    
+    display: flex;
+    
+    
+    
+    margin-top: 10%;
+
+    height: 50px;
+    background: rgb(253, 91, 50);
+    
+    .footerContent{
+        display: flex;
+        margin-left: 50px;
+        margin-right: 50px;
+        justify-content: space-evenly;
+        align-items: center;
+        filter: brightness(0) invert(1);
+    }
+
+    nav{
+        ol{
+            display: flex;
+            justify-content: flex-end;
+            width: 100vh;
+            li{
+                margin-left: 15px;
+                list-style: none;
+                a{  font-family:PantonLight;
+                    font-size: 12px;
+                    text-decoration: none;
+                }
+                
+            }
+        
+    }
+}
+}

@@ -22,6 +22,7 @@ import items from "./assets/img/alien-dans-illustration-foret.jpg";
 import CardItems from "./components/CardItems/CardItems";
 import ButtonCliked from "./components/ButtoCliked/ButtonCliked";
 import Accordeon from "./components/Accordeon/Accordeon";
+import Footer from './components/Footer/Footer'
 
 
 function App() {
@@ -83,7 +84,7 @@ function App() {
 
         <SectionTitle
             title="Bring Your Ideas with Your Prompts"
-            subtitle="Discover how to create visually unique, high-fidelity, and precise prompts to your ideas using Bayangin's extensive library of resources."
+            subtitle="Discover how to create visually unique, high-fIdelity, and precise prompts to your ideas using Bayangin's extensive library of resources."
           />
         <ButtonGenearator />
 
@@ -129,11 +130,11 @@ function App() {
             subtitle="Frequently Asked Questions about Bayangin."
           />
       <Accordeon title='fefefe'/>
-      <section>
+
       
-      </section>
+     
       </div>
-      
+      <Footer/>
     </div>
   );
 }
