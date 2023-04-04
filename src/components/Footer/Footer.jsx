@@ -11,9 +11,9 @@ function Footer(){
             <nav >
                 <ol>
                     <li><a href="#">Term of Service</a></li>
-                    <li><a href="">Policy Service</a></li>
-                    <li><a href="">Support</a></li>
-                    <li><a href="">@2023 Bayangin</a></li>
+                    <li><a href="#">Policy Service</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="#">@2023 Bayangin</a></li>
                 </ol>
             </nav>
             

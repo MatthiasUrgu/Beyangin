@@ -4,3 +4,24 @@
     align-items: center;
     margin-top: 50px ;
 }
+
+
+@media (width <=768px) {
+    .container{
+        display: flex;
+        justify-content: flex-start;
+        
+        
+    .logo{
+        margin-left: 10%;
+    
+        order: 0;
+    }
+    .menu{
+        order: -1;
+    }
+    .logIn{
+        display: none;
+    }
+}
+}

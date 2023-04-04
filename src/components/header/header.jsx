@@ -5,14 +5,20 @@ import ButtonGenearator from "../ButtonGenearator/ButtonGenearator";
 function Header() {
   return (
     <div className={s.container}>
-      <Logo title="Beyangin" />
-      <HeaderMenu 
-        list1="Home" 
-        list2="About" 
-        list3="Library" 
-        list4="Contact" />
+      <div className={s.logo}>
+        <Logo title="Beyangin" />
+      </div>
+      <div className={s.menu}>
+        <HeaderMenu
+          list1="Home"
+          list2="About"
+          list3="Library"
+          list4="Contact" />
+      </div>
 
-      <ButtonGenearator signIn='Sign Up' logIn='Log In'/>
+      <div className={s.logIn}>
+        <ButtonGenearator signIn='Sign Up' logIn='Log In'/>
+      </div>
     </div>
   );
 }

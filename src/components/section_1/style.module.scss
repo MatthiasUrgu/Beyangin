@@ -1,9 +1,9 @@
 @import url(../../assets/fonts/font.scss);
 
 .container {
-    margin-top: 30px;
-    margin-bottom: 30px;
-    
+  margin-top: 30px;
+  margin-bottom: 30px;
+
   h1 {
     font-size: 45px;
     font-family: PantonBold;
@@ -15,36 +15,72 @@
     display: flex;
     align-items: center;
 
-        .vignette{
-                content:'';
-                margin-left: 20px;
-                height: 40px; 
-                width: 130px;
-                background-color: black;
-                border-radius: 25px;
-                overflow: hidden; 
+    .vignette {
+      content: "";
+      margin-left: 20px;
+      height: 40px;
+      width: 130px;
+      background-color: black;
+      border-radius: 25px;
+      overflow: hidden;
 
-            img{
-                position: relative;
-                transform:scaleX(-1) translate(20%,-23%);
-                margin-left:15px;
-                width: 150px;
-            }
-        }
-
+      img {
+        position: relative;
+        transform: scaleX(-1) translate(20%, -23%);
+        margin-left: 15px;
+        width: 150px;
+      }
+    }
   }
   .secondRow {
     display: flex;
     align-items: center;
 
     .little {
-        width: 350px;
+      width: 350px;
       p {
         font-family: PantonLight;
         font-size: 12px;
         margin-left: 15px;
         line-height: 18px;
       }
+    }
+  }
+}
+
+@media (width<376px) {
+  .container {
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+
+    .firstRow {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .vignette {
+        position: relative;
+        top: -50px;
+        margin-left: 5em;
+      }
+    }
+    .secondRow {
+      
+      display: flex;
+      flex-direction: column;
+      margin-top: -13%;
+      .secondTitle {
+        
+      }
+        .little {
+          
+          margin-left: 3%;
+          display: flex;
+          .littleText {
+            width: 300px;
+          }
+        }
+      
     }
   }
 }

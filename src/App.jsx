@@ -22,8 +22,7 @@ import items from "./assets/img/alien-dans-illustration-foret.jpg";
 import CardItems from "./components/CardItems/CardItems";
 import ButtonCliked from "./components/ButtoCliked/ButtonCliked";
 import Accordeon from "./components/Accordeon/Accordeon";
-import Footer from './components/Footer/Footer'
-
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -32,7 +31,13 @@ function App() {
         <Header />
 
         <div className={s.section1}>
-          <Section1 vignette={vignette} />
+          <Section1
+            title="GENERATE YOUR IDEAS INTO"
+            vignette={vignette}
+            twoTitle="STUNNING VISUALS"
+            paragraphe="Introducing Beyangin, the Generative AI image for brings your ideas
+            to lide with perfectly matched and unique visuals."
+          />
         </div>
         <SectionImages
           imageVetrical={SectionImages_1}
@@ -83,9 +88,9 @@ function App() {
         <TwoImage item={item} items={items} />
 
         <SectionTitle
-            title="Bring Your Ideas with Your Prompts"
-            subtitle="Discover how to create visually unique, high-fIdelity, and precise prompts to your ideas using Bayangin's extensive library of resources."
-          />
+          title="Bring Your Ideas with Your Prompts"
+          subtitle="Discover how to create visually unique, high-fIdelity, and precise prompts to your ideas using Bayangin's extensive library of resources."
+        />
         <ButtonGenearator />
 
         <div className={s.CardItems}>
@@ -116,25 +121,21 @@ function App() {
             CrossImage3={image3}
             CrossImage4={image4}
           />
-          
         </div>
         <SectionTitle
-            title="Purchase Subscription"
-            subtitle="Choose the path plan that works for you."
-          />
+          title="Purchase Subscription"
+          subtitle="Choose the path plan that works for you."
+        />
 
-      <ButtonCliked />
-      
-      <SectionTitle
-            title="FAQ"
-            subtitle="Frequently Asked Questions about Bayangin."
-          />
-      <Accordeon title='fefefe'/>
+        <ButtonCliked />
 
-      
-     
+        <SectionTitle
+          title="FAQ"
+          subtitle="Frequently Asked Questions about Bayangin."
+        />
+        <Accordeon title="fefefe" />
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }
