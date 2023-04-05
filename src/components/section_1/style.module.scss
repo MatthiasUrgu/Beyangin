@@ -48,6 +48,35 @@
   }
 }
 
+
+@media (width <=768px) {
+  .container{
+    .firstRow{
+      
+      .vignette{
+        position: relative;
+        top: -30px;
+        left: -50px;
+      }
+    }
+  }
+  
+}
+
+@media (width <=425px){
+  .container{
+    .firstRow{
+      
+      .vignette{
+        position: relative;
+        top: 26px;
+        left: -230px;
+      }
+    }
+  }
+}
+
+
 @media (width<376px) {
   .container {
    
@@ -61,7 +90,8 @@
       .vignette {
         position: relative;
         top: -50px;
-        margin-left: 5em;
+        left:0px ;
+        margin-left: 2em;
       }
     }
     .secondRow {
@@ -85,7 +115,3 @@
   }
 }
 
-@media (width <=768px) {
-  
-  
-}

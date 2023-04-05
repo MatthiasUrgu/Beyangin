@@ -1,0 +1,16 @@
+.cardContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (width <=320px ){
+    .cardContainer{    display:flex;
+    flex-direction: column;
+
+        .ticketItem{
+            padding-bottom:25px
+
+        }
+
+}
+}

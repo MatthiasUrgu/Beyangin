@@ -76,14 +76,15 @@ function App() {
             />
           </div>
         </div>
-
-        <SectionImages
-          imageVetrical={SectionImages_1}
-          horizontal={SectionImages_2}
-          horrizontalSecondFirst={SectionImages_3}
-          horrizontalSecondSecond={SectionImages_4}
-          verticalSecond={SectionImages_5}
-        />
+        <div className={s.sectionImages}>
+          <SectionImages
+            imageVetrical={SectionImages_1}
+            horizontal={SectionImages_2}
+            horrizontalSecondFirst={SectionImages_3}
+            horrizontalSecondSecond={SectionImages_4}
+            verticalSecond={SectionImages_5}
+          />
+        </div>
         {/* Amélioration ajouter a SectionImage et display:none
         au responsive */}
         <div className={s.twoImages}>
@@ -109,7 +110,6 @@ function App() {
             />
           </div>
           <div className={s.cardItem}>
-            
             <CardItems
               title="Introduction to Generative AI Image: Understanding the Basics"
               subtitle="You will lean the fundamental concept behind generative AI image technology and how it works."
@@ -119,8 +119,9 @@ function App() {
               CrossImage3={image3}
               CrossImage4={image4}
             />
-          </div><div className={s.cardItem}>
-                     <CardItems
+          </div>
+          <div className={s.cardItem}>
+            <CardItems
               title="Introduction to Generative AI Image: Understanding the Basics"
               subtitle="You will lean the fundamental concept behind generative AI image technology and how it works."
               button="Learn more"

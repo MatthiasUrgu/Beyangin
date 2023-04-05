@@ -1,6 +1,7 @@
 import s from "./style.module.scss";
 import CardWeekly from "../CardWeekly/CardWeekly";
 import AllCardYearly from '../AllCardYearly/AllCardYearly'
+import AllCardWeekly from "../AllCardWeekly/AllCardWeekly";
 import { useState } from "react";
 function ButtonCliked() {
  const [isHovered, setIsHovered] = useState(false);
@@ -28,7 +29,7 @@ function ButtonCliked() {
         </span>
       </button>
     </div>
-    {isHovered? <CardWeekly/>:<AllCardYearly/>}
+    {isHovered? <AllCardWeekly/>:<AllCardYearly/>}
   </div>
 );
 }

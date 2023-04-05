@@ -1,4 +1,4 @@
-@media (width >=1024px) {
+
   .container {
     margin-left: 5%;
     margin-right: 5%;
@@ -19,13 +19,15 @@
 
   .CardItems {
     margin-top: 30px;
-    display: flex;
-    justify-content: space-between;
+    
+    display:flex;
+    flex-direction: row;
     align-items: center;
+    
   }
-}
 
-@media (width <=320px) {
+
+@media (width <=476px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -45,11 +47,24 @@
     margin-top:-9% ;
   }
  .cardItems{
- 
+    display: flex;
+    flex-direction: column;
   .cardItem{
     margin-bottom: 10%;
   }
  }
+  }
+}
+
+@media(width >=1024px){
+  .container{
+    .sectionImages{
+      margin-top: 3%;
+    }
+    .cardItems{
+      display: flex;
+      justify-content: space-between;
+    }
   }
 }
 

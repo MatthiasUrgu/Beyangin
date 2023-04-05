@@ -5,7 +5,11 @@
     margin-top: 50px ;
 }
 
-
+@media (width <=426px){
+    .logo{
+        padding-left: 40px;
+    }
+}
 @media (width <=767px) {
     .container{
         display: flex;
