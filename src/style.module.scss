@@ -1,49 +1,55 @@
 @media (width >=1024px) {
-    
-.container{
-    
+  .container {
     margin-left: 5%;
     margin-right: 5%;
-    
-    
-
-    .section1{
-        display: flex;
+    .section1 {
+      display: flex;
     }
-    .section{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-}
+  }
 
-
-.margin{
+  .margin {
     margin-top: 5px;
     margin-bottom: 25px;
-}
+  }
 
-.CardItems{
+  .CardItems {
     margin-top: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+  }
 }
 
+@media (width <=320px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin:0 3%;
 
-@media (width >=768px) {
-    .container{
-        display: flex;
-        flex-direction: column;
-        
-       
+    .section{
+     
+    .buttonGenerator{
+      display: flex;
+      
+      justify-content: center;
     }
+  }
+  .twoImages{
+    
+    position: relative;
+    margin-top:-9% ;
+  }
+ .cardItems{
+ 
+  .cardItem{
+    margin-bottom: 10%;
+  }
+ }
+  }
 }
-@media (width >=320) {
-    .container{
-        display: flex;
-        flex-direction: column;
-        margin: 0 5%;
-    }
-}
+

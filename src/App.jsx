@@ -53,7 +53,7 @@ function App() {
         <div className={s.section}>
           <SectionTitle
             title="Generative AI Image Made for You"
-            subtitle="With Beyangin you can create customuzed images 10x faster,wherever you worl online"
+            subtitle="With Beyangin you can create customuzed images 10x faster,wherever you worl online."
           />
           <ButtonGenearator demo="Get Demo" start="Start Now" />
 
@@ -68,7 +68,7 @@ function App() {
             title="Explore the Best Generative Images"
             subtitle="We take pride in the work created on our platform,which is why we showcase the top daily generatice images for you to discover and we inspired by."
           />
-          <div className={s.margin}>
+          <div className={s.buttonGenerator}>
             <ButtonGenearator
               TopMonth="Top Monthly"
               TopWeekly="Top Weekly"
@@ -84,8 +84,11 @@ function App() {
           horrizontalSecondSecond={SectionImages_4}
           verticalSecond={SectionImages_5}
         />
-
-        <TwoImage item={item} items={items} />
+        {/* Amélioration ajouter a SectionImage et display:none
+        au responsive */}
+        <div className={s.twoImages}>
+          <TwoImage item={item} items={items} />
+        </div>
 
         <SectionTitle
           title="Bring Your Ideas with Your Prompts"
@@ -93,34 +96,40 @@ function App() {
         />
         <ButtonGenearator />
 
-        <div className={s.CardItems}>
-          <CardItems
-            title="Introduction to Generative AI Image: Understanding the Basics"
-            subtitle="You will lean the fundamental concept behind generative AI image technology and how it works."
-            button="Learn more"
-            CrossImage1={image1}
-            CrossImage2={image2}
-            CrossImage3={image3}
-            CrossImage4={image4}
-          />
-          <CardItems
-            title="Introduction to Generative AI Image: Understanding the Basics"
-            subtitle="You will lean the fundamental concept behind generative AI image technology and how it works."
-            button="Learn more"
-            CrossImage1={image1}
-            CrossImage2={image2}
-            CrossImage3={image3}
-            CrossImage4={image4}
-          />
-          <CardItems
-            title="Introduction to Generative AI Image: Understanding the Basics"
-            subtitle="You will lean the fundamental concept behind generative AI image technology and how it works."
-            button="Learn more"
-            CrossImage1={image1}
-            CrossImage2={image2}
-            CrossImage3={image3}
-            CrossImage4={image4}
-          />
+        <div className={s.cardItems}>
+          <div className={s.cardItem}>
+            <CardItems
+              title="Introduction to Generative AI Image: Understanding the Basics"
+              subtitle="You will lean the fundamental concept behind generative AI image technology and how it works."
+              button="Learn more"
+              CrossImage1={image1}
+              CrossImage2={image2}
+              CrossImage3={image3}
+              CrossImage4={image4}
+            />
+          </div>
+          <div className={s.cardItem}>
+            
+            <CardItems
+              title="Introduction to Generative AI Image: Understanding the Basics"
+              subtitle="You will lean the fundamental concept behind generative AI image technology and how it works."
+              button="Learn more"
+              CrossImage1={image1}
+              CrossImage2={image2}
+              CrossImage3={image3}
+              CrossImage4={image4}
+            />
+          </div><div className={s.cardItem}>
+                     <CardItems
+              title="Introduction to Generative AI Image: Understanding the Basics"
+              subtitle="You will lean the fundamental concept behind generative AI image technology and how it works."
+              button="Learn more"
+              CrossImage1={image1}
+              CrossImage2={image2}
+              CrossImage3={image3}
+              CrossImage4={image4}
+            />
+          </div>
         </div>
         <SectionTitle
           title="Purchase Subscription"

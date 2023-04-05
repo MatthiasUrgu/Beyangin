@@ -16,3 +16,13 @@
         width: 400px;
     }
 }
+
+@media (width <=320px){
+    .containerImage{
+
+        .img{
+            width: 200px;
+            transform: translateX(-40px);
+        }
+    }
+}

@@ -3,15 +3,23 @@ $primmaryColor :rgb(253 91 50);
 
 .buttonClick {
     background-color:$primmaryColor;
-    border: none;
-    padding: 8px  18px;
+    border: 1px solid $primmaryColor;
+    padding: 8px  15px;
     border-radius: 25px;
     color: white;
-    margin-right: 20px;
+    margin-right: 10px;
     &:hover{
         border: 1px solid $primmaryColor;
         background-color:white;
         color: $primmaryColor;
         transition: 0.2s;
+    }
+}
+
+
+@media(width<=320px){
+    .buttonClick{
+       margin-bottom: 3%;
+    
     }
 }

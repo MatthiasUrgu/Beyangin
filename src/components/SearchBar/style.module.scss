@@ -25,3 +25,13 @@
     
     
 }
+
+@media (width <= 320px){
+    .container{
+        top:-155px;
+        left: 30px;
+        input{
+            width: 200px;
+        }
+    }
+}

@@ -1,7 +1,7 @@
-.container {
+.imgContainer {
   display: flex;
   height: 350px;
-  width: 100%;
+  
   justify-content: space-between;
 
   .vertical {
@@ -66,3 +66,27 @@
     font-family: PantonLight;
     font-size: 12px;
 }
+
+
+@media (width <=320px){
+ .imgContainer{
+  
+
+    .vertical{
+      display: none;
+    }
+    .centerCol{
+      width:100%;
+      .topCol{
+        margin-bottom: 2%;
+      }
+      .centerRow{
+        
+        .row1{
+          margin-right: 2%;
+        }
+      }
+    }
+ }
+  
+} 
