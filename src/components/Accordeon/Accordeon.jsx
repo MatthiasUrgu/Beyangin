@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import data from './data'
+import data from '../../Data/data'
 import AccordeonItem from './AccordeonItem';
 
 function Accordeon(){

@@ -1,4 +1,4 @@
-import CardYearly from "../CardYearly/CardYearly";
+import CardYearly from "../Card/Card";
 import s from "./style.module.scss";
 
 function AllCardYearly() {

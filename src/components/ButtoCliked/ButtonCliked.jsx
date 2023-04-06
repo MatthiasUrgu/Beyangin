@@ -1,5 +1,4 @@
 import s from "./style.module.scss";
-import CardWeekly from "../CardWeekly/CardWeekly";
 import AllCardYearly from '../AllCardYearly/AllCardYearly'
 import AllCardWeekly from "../AllCardWeekly/AllCardWeekly";
 import { useState } from "react";

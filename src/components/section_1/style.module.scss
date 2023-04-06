@@ -49,66 +49,75 @@
 }
 
 
-@media (width <=768px) {
+@media (max-width:768px) {
   .container{
     .firstRow{
-      
+      min-width: 800px;
       .vignette{
         position: relative;
-        top: -30px;
-        left: -50px;
+        top: 52px;
+        left: -200px;
+      }
+    }
+    .secondRow{
+      .little{
+        display: none;
       }
     }
   }
   
 }
 
-@media (width <=425px){
+@media (max-width:425px){
   .container{
     .firstRow{
-      
+      h1{
+        width: 400px;
+      }
       .vignette{
         position: relative;
-        top: 26px;
-        left: -230px;
+        width: 130px;
+        top: 25px;
+        left: -160px;
+      }
+    }
+    .secondRow{
+      .secondTitle{
+        width: 100px;
+      }
+      .little{
+        display: none;
       }
     }
   }
 }
 
 
-@media (width<376px) {
+@media (max-width:376px) {
   .container {
-   
     display: flex;
     flex-direction: column;
-
     .firstRow {
       display: flex;
       flex-direction: column;
       align-items: center;
+      h1{
+        position: relative;
+        left: -220px;
+        width:350px;
+      }
       .vignette {
         position: relative;
-        top: -50px;
-        left:0px ;
-        margin-left: 2em;
+        top: -52px;
+        left: -210px;
       }
     }
     .secondRow {
-      
-      display: flex;
-      flex-direction: column;
-      margin-top: -13%;
-      
+      .secondTitle{
+        margin-top: -40px;
+      }
         .little {
-          
-          margin-top: 5%;
-          margin-left: 3%;
-          display: flex;
-          .littleText {
-            padding-left: 3%;
-            width: 270px;
-          }
+          display: none;
         }
       
     }

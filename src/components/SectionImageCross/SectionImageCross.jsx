@@ -24,7 +24,9 @@ function SectionImageCross({CrossImage1,CrossImage2,CrossImage3,CrossImage4,
           </div>
         </div>
       </div>
-      <SearchBar />
+      <div className={s.search}>
+        <SearchBar />
+      </div>
     </div>
   );
 }

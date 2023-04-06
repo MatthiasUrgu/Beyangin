@@ -17,12 +17,48 @@
     }
 }
 
-@media (width <=320px){
+
+@media (max-width:768px){
+    .containerImage{
+        
+        .img{
+            width: 350px;
+            transform: translateX(0px);
+        }
+    }
+    .search{
+        position: relative;
+        top: 35px;
+    }
+}
+
+@media (max-width:425px){
     .containerImage{
 
         .img{
             width: 200px;
-            transform: translateX(-40px);
+            transform: translateX(-0px);
         }
+    }
+    .search{
+        position: relative;
+        top: 135px;
+        left: -100px;
+    }
+}
+
+@media (max-width:320px){
+    .containerImage{
+
+        .img{
+            width: 150px;
+            transform: translateX(-0px);
+        }
+
+    }
+    .search{
+        position: relative;
+        top: 35px;
+        left: 0px;
     }
 }

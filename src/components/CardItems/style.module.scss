@@ -3,6 +3,8 @@ $primmary:rgba(253,91,50);
 .container{
     width: 260px;
     
+    
+    
     .containerImage{
         
         border-radius:10px;
@@ -11,6 +13,7 @@ $primmary:rgba(253,91,50);
     
         .firstRow{
             display: flex;
+            
         }
         .secondRow{
             display: flex;
@@ -51,6 +54,7 @@ $primmary:rgba(253,91,50);
         margin-top: -20px;
         font-family: PantonBold;
         font-size: 12px;
+        padding-bottom: 10px;
     }
     p{
         font-family: PantonLight;

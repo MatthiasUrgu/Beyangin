@@ -1,16 +1,17 @@
-.cardContainer{
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .cardContainer {
     display: flex;
-    justify-content: space-between;
-}
-
-@media (width <=320px ){
-    .cardContainer{    display:flex;
     flex-direction: column;
+    align-items: center;
 
-        .ticketItem{
-            padding-bottom:25px
-
-        }
-
-}
+    .ticketItem {
+      
+      padding-bottom: 25px;
+    }
+  }
 }

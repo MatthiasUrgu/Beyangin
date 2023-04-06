@@ -1,15 +1,15 @@
-import CardYearly from "../Card/Card";
+import CardYearly from "../Card/CardYearly";
 import s from "./style.module.scss";
 
-function AllCardWeekly() {
+function AllCardYearly() {
   return (
     <div className={s.cardContainer}>
       <div className={s.ticketItem}>
         <CardYearly
           title="Basic plan"
-          price="$5.88"
-          time="month"
-          subtitle="Billed Monthly"
+          price="$50"
+          time="year"
+          subtitle="Billed Yearly"
           puce1="7h fast generate"
           puce2="Limited generate (100/month)"
           puce3="Access to member gallery"
@@ -20,9 +20,9 @@ function AllCardWeekly() {
       <div className={s.ticketItem}>
         <CardYearly
           title="Standard plan"
-          price="$9.99"
-          time="month"
-          subtitle="Billed Monthly"
+          price="$150"
+          time="year"
+          subtitle="Billed Yearly"
           puce1="15h fast generate"
           puce2="Unlimeted relax generate"
           puce3="Access to member gallery"
@@ -32,9 +32,9 @@ function AllCardWeekly() {
       <div className={s.ticketItem}>
         <CardYearly
           title="Pro plan"
-          price="$15.99"
-          time="month"
-          subtitle="Billed Monthly"
+          price="$150"
+          time="year"
+          subtitle="Billed Yearly"
           puce1="30h fast generate"
           puce2="Unlimeted relax generate"
           puce3="Access to member gallery"
@@ -45,4 +45,4 @@ function AllCardWeekly() {
   );
 }
 
-export default AllCardWeekly;
+export default AllCardYearly;

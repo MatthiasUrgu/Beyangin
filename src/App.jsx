@@ -98,7 +98,7 @@ function App() {
         <ButtonGenearator />
 
         <div className={s.cardItems}>
-          <div className={s.cardItem}>
+          <div className={`${s.cardItem} ${s.cardItem1}`}>
             <CardItems
               title="Introduction to Generative AI Image: Understanding the Basics"
               subtitle="You will lean the fundamental concept behind generative AI image technology and how it works."
@@ -109,7 +109,7 @@ function App() {
               CrossImage4={image4}
             />
           </div>
-          <div className={s.cardItem}>
+          <div className={`${s.cardItem} ${s.cardItem2}`}>
             <CardItems
               title="Introduction to Generative AI Image: Understanding the Basics"
               subtitle="You will lean the fundamental concept behind generative AI image technology and how it works."
@@ -120,7 +120,7 @@ function App() {
               CrossImage4={image4}
             />
           </div>
-          <div className={s.cardItem}>
+          <div className={`${s.cardItem} ${s.cardItem3}`}>
             <CardItems
               title="Introduction to Generative AI Image: Understanding the Basics"
               subtitle="You will lean the fundamental concept behind generative AI image technology and how it works."
