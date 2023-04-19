@@ -1,10 +1,10 @@
 import s from "./style.module.scss";
 import { AiOutlineCheckCircle } from 'react-icons/ai';
 
-function CardYearly({title,price,time,subtitle,puce1,puce2,puce3,puce4}) {
+function Card({title,price,time,subtitle,puce1,puce2,puce3,puce4}) {
   return (
-    <div className={s.cardContainer}>
-      <div className={s.cardOrange}>
+    <section className={s.cardContainer}>
+      <article className={s.cardOrange}>
         <div className={s.content}>
          <h2>{title}</h2>
           <div className={s.priceContent}>
@@ -21,18 +21,14 @@ function CardYearly({title,price,time,subtitle,puce1,puce2,puce3,puce4}) {
             <p><AiOutlineCheckCircle/> <span className={s.puce}>{puce4}</span>  </p>
 
           </div>
-          
-          
-        </div>
+
         <div className={s.buttonContainer}>
           <button className={s.cardButton}>Submit</button>
         </div>
-        
-      </div>
-     
-      
-    </div>
+        </div>
+      </article>
+    </section>
   );
 }
 
-export default CardYearly;
+export default Card;

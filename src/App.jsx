@@ -56,14 +56,12 @@ function App() {
             subtitle="With Beyangin you can create customuzed images 10x faster,wherever you worl online."
           />
           <ButtonGenearator demo="Get Demo" start="Start Now" />
-
           <SectionImageCross
             CrossImage1={image1}
             CrossImage2={image2}
             CrossImage3={image3}
             CrossImage4={image4}
           />
-
           <SectionTitle
             title="Explore the Best Generative Images"
             subtitle="We take pride in the work created on our platform,which is why we showcase the top daily generatice images for you to discover and we inspired by."

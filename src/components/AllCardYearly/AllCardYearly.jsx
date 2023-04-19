@@ -1,11 +1,11 @@
-import CardYearly from "../Card/Card";
+import Card from "../Card/Card";
 import s from "./style.module.scss";
 
 function AllCardYearly() {
   return (
     <div className={s.cardContainer}>
       <div className={s.ticketItem}>
-        <CardYearly
+        <Card
           title="Basic plan"
           price="$50"
           time="year"
@@ -18,7 +18,7 @@ function AllCardYearly() {
       </div>
 
       <div className={s.ticketItem}>
-        <CardYearly
+        <Card
           title="Standard plan"
           price="$150"
           time="year"
@@ -30,7 +30,7 @@ function AllCardYearly() {
         />
       </div>
       <div className={s.ticketItem}>
-        <CardYearly
+        <Card
           title="Pro plan"
           price="$150"
           time="year"

@@ -1,118 +1,115 @@
-$primmary:rgb(253, 91, 50);
-$second : rgba(151,152,156,1);
+$primmary: rgb(253, 91, 50);
+$second: rgba(151, 152, 156, 1);
 
-
-.cardContainer{
-    display: flex;
-    justify-content: space-between;
-   
-   
-.cardOrange{
-    
-    border: 1px solid rgba(151,152,156,0.3);
-    border-radius: 10px;
-    background: white;
-    transition: 0.3s;
-
-    &:hover{
-        box-shadow: 1px 1px 8px 2px $primmary;
-        transform: translateY(-5px) ;
-        
-       
+.cardContainer {
+  display: flex;
+  justify-content: space-between;
 }
 
-    .content{
-        display: flex;
-        flex-direction: column;
-        margin:  15px 20px 0px ;
-        width: 260px;
-        
+.cardOrange {
+  border: 1px solid rgba(151, 152, 156, 0.3);
+  border-radius: 10px;
+  background: white;
+  transition: 0.3s;
+
+  &:hover {
     
-    
+    transform: translateY(-3px);
+    background-color: $primmary;
+    filter: contrast(1);
+    .content {
+        p{
+            color: white;
+        }
         h2{
-            font-family: PantonBold;
-            font-size: 25px;
-            margin-bottom: 30px;
-        }
-    
-        .priceContent{
-            display: flex;
-            align-items: center;
-
-        }
-        .price{
-            font-family: FrancoisOne;
-            
-            font-size: 40px;
-            margin-bottom: 10px;
-        }
-        .priceTime{
-            padding-top: 10px;
-            padding-left: 10px;
-            font-family: FrancoisOne;
-            color: rgba(151,152,156,0.5);
-        }
-        .subtitle{
-            font-family: FrancoisOne;
-            font-size: 12px;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            color: rgba(151,152,156,0.5);
-        }
+            @extend p}
         .line{
-            border-radius: 30px;
-            background: $second;
-            opacity: 0.3;
-            height: 1px;
-            width: 100%;
-            margin-top: 15px;
-            margin-bottom: 50px;
+            background-color: white;
+            opacity: 1;
         }
-        .list{
-            margin-bottom: 75px;
-
-            p{  
-            display: flex;
-                
-                .puce{
-                
-                padding-top: -5px;
-                margin-left: 15px;
-                }
-            }
-
-            
+        button{
+            background-color: white;
+            color: $primmary;
         }
-}
+    }
+    }
 
-.buttonContainer{
-
+  .content {
     display: flex;
-   
+    flex-direction: column;
+    margin: 15px 20px 0px;
+    width: 260px;
+
+    h2 {
+      font-family: PantonBold;
+      font-size: 25px;
+      margin-bottom: 30px;
+    }
+
+    .priceContent {
+      display: flex;
+      align-items: center;
+    }
+    .price {
+      font-family: FrancoisOne;
+      font-size: 40px;
+      margin-bottom: 10px;
+    }
+    .priceTime {
+      padding-top: 10px;
+      padding-left: 10px;
+      font-family: FrancoisOne;
+      color: rgba(151, 152, 156, 0.5);
+    }
+    .subtitle {
+      font-family: FrancoisOne;
+      font-size: 12px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      color: rgba(151, 152, 156, 0.5);
+    }
+    .line {
+      border-radius: 30px;
+      background-color: $second;
+      opacity: 0.3;
+      height: 5px;
+      width: 100%;
+      margin-top: 15px;
+      margin-bottom: 50px;
+    }
+    .list {
+      margin-bottom: 75px;
+
+      p {
+        display: flex;
+
+        .puce {
+          padding-top: -5px;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+
+    button {
+      align-self: center;
+      border: none;
+      height: 30px;
+      width: 100%;
+      margin: 0px 10px;
+      border-radius: 15px;
+      background-color: rgb(253, 91, 50);
+      color: white;
+      margin-bottom: 30px;
+    }
     
- button{
-        
-        align-self: center;
-        border: none;
-        height:30px;
-        width: 100%;
-        margin: 0px 10px;
-        border-radius: 15px;
-        background-color: rgb(253, 91, 50);
-        color: white;
-        margin-bottom: 30px;
-
+    button:focus {
+      border: 1px solid $primmary;
+      color: rgb(253, 91, 50);
+      background: white;
     }
-    button:hover{
-        border: 1px solid $primmary;
-        color:rgb(253, 91, 50);
-        background: white;
-    }
+  }
 }
-
-}
-}
-
-
-
-

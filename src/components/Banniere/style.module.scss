@@ -1,6 +1,42 @@
 .container {
-    margin-top: 8%;
-    background-color: rgba(253,91,50,1);
-    height: 65px;
+  display: flex;
+  align-items: center;
+  user-select: none;
+  margin-top: 8%;
+  background-color: rgba(253, 91, 50, 1);
+  height: 65px;
+  filter: contrast(1);
 
+  .marquee {
+    display: flex;
+    min-width: 100%;
+    overflow: hidden;
+    user-select: none;
+
+    .marqueeContent {
+      display: flex;
+      animation: linear scroll 10s infinite;
+
+      li {
+       
+        display: flex;
+        align-items: center;
+        list-style: none;
+        color: white;
+        text-transform: uppercase;
+        margin-left:95px ;
+        font-size: 45px;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
