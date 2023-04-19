@@ -1,6 +1,7 @@
 @import url(../../assets/fonts/font.scss);
 
 .container {
+  
   margin-top: 30px;
   margin-bottom: 30px;
 
@@ -36,6 +37,8 @@
   .secondRow {
     display: flex;
     align-items: center;
+    justify-content: center;
+    margin-top: -50px;
 
     .little {
       width: 350px;
@@ -52,15 +55,19 @@
 
 @media (max-width:768px) {
   .container{
+    
     .firstRow{
       
+      
+      margin: 0;
       .vignette{
         position: relative;
-        top: 58px;
-        left: -200px;
+        top: 25px;
+        left: -450px;
       }
     }
     .secondRow{
+      justify-content: flex-start;
       .little{
         display: none;
       }
@@ -83,6 +90,8 @@
       }
     }
     .secondRow{
+      justify-content: flex-start;
+      margin-top: -60px;
       .secondTitle{
         width: 300px;
       }
@@ -94,7 +103,7 @@
 }
 
 
-@media (max-width:376px) {
+@media (max-width:375px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -114,8 +123,10 @@
       }
     }
     .secondRow {
+      justify-content: flex-start;
+      
       .secondTitle{
-        margin-top: -40px;
+        margin-top: -10px;
       }
         .little {
           display: none;
@@ -129,7 +140,7 @@
   .container {
     
     .firstRow {
-      
+      justify-content:center
       h1{
         width: 320px;
         
@@ -141,9 +152,9 @@
       }
     }
     .secondRow {
-      .secondTitle{
-        margin-top: -40px;
-      }
+      justify-content: flex-start;
+      margin-top: -60px;
+
         .little {
           display: none;
         }
