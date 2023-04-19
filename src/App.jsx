@@ -45,7 +45,7 @@ function App() {
           horrizontalSecondFirst={SectionImages_3}
           horrizontalSecondSecond={SectionImages_4}
           verticalSecond={SectionImages_5}
-          subtitle="Art created by AI"
+          subtitle="Art created by AIIII"
         />
       </div>
       <Banniere />
