@@ -26,7 +26,7 @@ import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
-    <div>
+    <div className={s.body}>
       <div className={s.container}>
         <Header />
 
