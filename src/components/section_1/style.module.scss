@@ -13,6 +13,7 @@
 
   .firstRow {
     display: flex;
+    justify-content: center;
     align-items: center;
 
     .vignette {
@@ -52,10 +53,10 @@
 @media (max-width:768px) {
   .container{
     .firstRow{
-      min-width: 800px;
+      
       .vignette{
         position: relative;
-        top: 52px;
+        top: 58px;
         left: -200px;
       }
     }
@@ -83,7 +84,7 @@
     }
     .secondRow{
       .secondTitle{
-        width: 100px;
+        width: 300px;
       }
       .little{
         display: none;
@@ -103,13 +104,13 @@
       align-items: center;
       h1{
         position: relative;
-        left: -220px;
+        left: 0px;
         width:350px;
       }
       .vignette {
         position: relative;
-        top: -52px;
-        left: -210px;
+        top: -80px;
+        left: 0px;
       }
     }
     .secondRow {
@@ -124,3 +125,29 @@
   }
 }
 
+@media (max-width:320px) {
+  .container {
+    
+    .firstRow {
+      
+      h1{
+        width: 320px;
+        
+      }
+      .vignette {
+        position: relative;
+        top: -80px;
+        left: 0px;
+      }
+    }
+    .secondRow {
+      .secondTitle{
+        margin-top: -40px;
+      }
+        .little {
+          display: none;
+        }
+      
+    }
+  }
+}

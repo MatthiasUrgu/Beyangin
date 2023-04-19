@@ -8,12 +8,10 @@
     overflow: hidden;
     border-radius: 20px;
     width: 25%;
-
-    img {
-      transform: translate(-40%, 0%);
-    }
-
     
+    img {
+      transform: translate(-40%, -5%);
+    }
   }
   .centerCol {
     width: 48%;
@@ -70,8 +68,6 @@
 
 @media (max-width:425px){
  .imgContainer{
-  
-
     .vertical{
       display: none;
     }

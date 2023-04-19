@@ -4,24 +4,24 @@ function SectionImages({imageVetrical,horizontal,horrizontalSecondFirst,horrizon
     
       <div className={s.imgContainer}>
         <div className={s.vertical}>
-        <img  src={imageVetrical} alt=""/>
+        <img  src={imageVetrical} alt="paysage"/>
         </div>
         <div className={s.centerCol}>
           <div className={s.topCol}>
-              <img  src={horizontal} alt=""/>
+              <img  src={horizontal} alt="sorcier"/>
           </div>
           <div className={s.centerRow}>
               <div className={s.row1}>
-                <img  src={horrizontalSecondFirst} alt=""/>
+                <img  src={horrizontalSecondFirst} alt="renard"/>
               </div>
               <div className={s.row2}>
-               <img  src={horrizontalSecondSecond} alt=""/>
+               <img  src={horrizontalSecondSecond} alt="flamme"/>
               </div>
           </div>
         </div>
         <div className={s.vertical}>
-          <img  src={verticalSecond} alt=""/>
-          </div>
+          <img className={s.dragon} src={verticalSecond} alt="dragon"/>
+        </div>
   </div>
         <div className={s.tinyText}>
           {subtitle}
