@@ -48,6 +48,31 @@ $primmaryColor: rgb(253 91 50);
             background-color: black;
         }
     }
+
+    .hamburgerOn{
+      content: "";
+      position: absolute;
+      top: 75px;
+      left: -121px;
+      width: 120px;
+      height: 165px;
+      background-color:yellow;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+      z-index: 1;
+
+      animation: ease-out HamburgerMenu 1s forwards;
+      
+    }
+  }
+}
+
+@keyframes HamburgerMenu{
+  to{
+    transform: translateX(121px);
+  }
+  from{
+    transform: translateX(0px);
   }
 }
 

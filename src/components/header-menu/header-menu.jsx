@@ -24,6 +24,8 @@ function HeaderMenu({ list1, list2, list3, list4 }) {
             <span className={s.hamburgerHide}></span>
             
         </button>
+
+        <section className={s.hamburgerOn}></section>
       </div>
     </div>
   );
